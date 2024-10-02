@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Playpen Sans", cursive;
+}
+
+body {
+    background-color: gray;
+    margin: 0.5rem 1rem;
+}
+
+.sala {
+    position: absolute;
+}
+
+#sala {
+    color: rgb(200, 200, 200);
+    padding: 1rem 10px 5px;
+    background-color: gray;
+    border: none;
+    font-size: 1.2rem;
+}
+
+#formularioCodigo {
+    opacity: 0;
+    animation: opacity 10s ease-in;
+}
+
+#codigo {
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    background-color: rgb(200, 200, 200);
+}
+
+#btncodigo {
+    /* display: flex; */
+    align-items: center;
+    margin-left: -2rem;
+    border-radius: 50%;
+    background-color: gray;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+}
+
+#btncodigo:active {
+    transform: scale(0.9);
+}
+
+h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
+
+#mensaje {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    height: 2rem;
+    opacity: 0;
+}
+
+#botones {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+    width: 450px;
+    height: 450px;
+}
+
+#botones button {
+    padding: 10px 20px;
+    background-color: gray;
+    cursor: pointer;
+    outline: none;
+    border: 5px solid #ff3d3d;
+    color: white;
+    font-size: 4rem;
+}
+
+#botones button:first-child {
+    border-top: none;
+    border-left: none;
+}
+
+#botones button:nth-child(2) {
+    border-top: none;
+}
+
+#botones button:nth-child(3) {
+    border-top: none;
+    border-right: none;
+}
+
+#botones button:nth-child(4) {
+    border-left: none;
+}
+
+#botones button:nth-child(6) {
+    border-right: none;
+}
+
+#botones button:nth-child(7) {
+    border-left: none;
+    border-bottom: none;
+}
+
+#botones button:nth-child(8) {
+    border-bottom: none;
+}
+
+#botones button:nth-child(9) {
+    border-right: none;
+    border-bottom: none;
+}
+
+#start {
+    position: absolute;
+    color: gray;
+    background-color: white;
+    border: white solid 2px;
+    padding: 0.5rem 1rem;
+    right: 0;
+    bottom: 5rem;
+    margin: auto 5rem auto auto;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#start:active {
+    transform: scale(0.9);
+}
+
+#jugador {
+    color: white;
+    display: flex;
+    justify-content: right;
+    margin: -2rem 5rem auto auto;
+}
